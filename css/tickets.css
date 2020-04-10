@@ -61,9 +61,29 @@ body{
     margin-right: 120px;
 }
 
+#single-price{
+    margin-right: 150px;
+}
+
+#couple-price{
+    margin-right: 150px;
+}
+
+#friends-price{
+    margin-right: 150px;
+}
+
+#family-price{
+    margin-right: 150px;
+}
+
 /* .ticket-types{
     padding: 5px;
 } */
+
+.quantities{
+    word-spacing: 40px;
+}
 
 .footer-con{
     width: 100%;
