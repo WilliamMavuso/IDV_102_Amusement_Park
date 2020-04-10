@@ -65,34 +65,54 @@
 
            <div class="quantities">
             <label>Quantity:</label>
-            <input type="number" min="0" max="1"  oninput="test()" name="singles-quanitity" id="singles-quantity" placeholder="0">
+            <input type="number" min="0" max="1"  oninput="ticketAdmin()" name="singles-quanitity" id="singles-quantity" placeholder="0">
             <label>Quantity:</label>
-            <input type="number" min="0" max="3" name="couples-quanitity" oninput="test()" id="couples-quantity" placeholder="0">
+            <input type="number" min="0" max="3" name="couples-quanitity" oninput="ticketAdmin()" id="couples-quantity" placeholder="0">
             <label>Quantity:</label>
-            <input type="number" min="0" max="5" name="friends-quanitity" oninput="test()" id="friends-quantity" placeholder="0">
+            <input type="number" min="0" max="5" name="friends-quanitity" oninput="ticketAdmin()" id="friends-quantity" placeholder="0">
             <label>Quantity:</label>
-            <input type="number" min="0" max="2" name="family-quanitity" oninput="test()" id="family-quantity" placeholder="0">
+            <input type="number" min="0" max="2" name="family-quanitity" oninput="ticketAdmin()" id="family-quantity" placeholder="0">
            </div>
 
           
             <div class="spacer"></div>
             <div class="purchase-button">
-                <button type="submit">Purchase</button>
+                <button type="submit" id="purchase-button" onclick="ticketGenerator()">Purchase</button>
             </div>
             <div class="spacer"></div>
 
             <div class="totals">
                 <div class="tickets-container">
                     <label> Total Tickets :</label>
-                    <label id="total-ticket-output" addTicketsTotal()>0</label>
+                    <label id="total-ticket-output">0</label>
                 </div>
                 <div class="spacer-1"></div>
 
                 <div class="income-container">
                     <label> Total Price :</label>
-                    <label id="total-price-output"></label>
+                    <label id="total-price-output"> R .00</label>
+                </div>
+                <div class="spacer"></div>
+
+                <div class="family-total-container">
+                    <label> Total Single Tickets :</label>
+                    <label id="total-single-ticket-output">0</label>
                 </div>
                 <div class="spacer-1"></div>
+
+
+                <div class="family-total-container">
+                    <label> Total Couple Tickets :</label>
+                    <label id="total-couple-ticket-output">0</label>
+                </div>
+                <div class="spacer-1"></div>
+
+                <div class="family-total-container">
+                    <label> Total Friends Tickets :</label>
+                    <label id="total-friends-ticket-output">0</label>
+                </div>
+                <div class="spacer-1"></div>
+
 
                 <div class="family-total-container">
                     <label> Total Family Tickets :</label>
@@ -102,7 +122,7 @@
             <div class="spacer"></div>
 
             <div class="reset-button">
-                <button type="submit">Reset</button>
+                <button type="reset" onclick="clearText()">Reset</button>
             </div>
     </form>
 </div>
