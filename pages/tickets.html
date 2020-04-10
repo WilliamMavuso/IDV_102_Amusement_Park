@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>  
+    <!--Meta_Information-->
+    <meta name="author" content="William Mavuso">
+    <meta name="assessment" content="amusement_park">
+    <meta name="subject" content="IDV100">
+    <meta name="lecturer" content="Mike Maynard">
+    
+    <!--title-->
+    <title> Tickets </title>
+    
+   <link rel="stylesheet" href="../css/tickets.css">
+    <script src="../js/data.js"></script>
+    <script src="../js/tickets.js"></script>
+    
+</head>
+
+<body>
+    
+    
+     <div class="nav-con">
+        <div class="logo-con"></div><!--logo_con-->
+        <div class="nav-buttons-con">
+          <ul class="nav-buttons">
+             <a href="../index.html"><li>Home</li></a>
+               <a href="../pages/tickets.html"><li>Tickets</li></a>
+             <a href="../pages/rides.html"><li>Rides</li></a>
+            </ul><!--nav_buttons-->
+        </div><!--nav_buttons_con-->
+    </div><!--nav_con-->
+    
+    <div class="header-con">
+        
+        <div class="overlay">
+        
+    
+         <div class="right-con">
+             
+             <div class="form-con">
+             <form class="buy-tickets"><h2> Buy Tickets</h2>
+                 
+                 <select name="dropdown" type="text" id="ticketOptions" onchange="getTicketInfo();">
+                 <option>- - -</option>
+                 <option> single's package</option>
+                 <option> couple's package </option>
+                 <option> friendship package </option>
+                 <option> family package</option>
+                     
+                 
+                 </select>
+                 
+                 <P>Quantity : </P>
+                 <input class="input" type="number" placeholder="1" id="ticketRange">
+                 <p> Cost Total</p>
+                 <div id="ticketTotalOutput" class="total-here"> </div>
+                 <div class="buy-now" id="buyNow" onclick="getTotalTicketCost()"> <h4>BUY</h4> </div> 
+                 
+                 
+                 </form><!--buy_tickets-->
+             </div><!--form_con-->
+             
+        </div><!--right_con-->
+        
+        </div><!--overlay-->
+        
+    </div><!--header_con-->
+        
+    <div class="footer-con">
+              </div><!--footer_con-->
+        
+        
+    
+</body>
+    
+</html>
