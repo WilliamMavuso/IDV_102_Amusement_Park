@@ -12,7 +12,7 @@ body{
 .header-con{
     width: 100%;
     height: 800px;
-    background-color: ;
+    /* background-color: ; */
     background-image: url(../img/multa-media-244244-unsplash.jpg);
     background-size: cover;
 }
@@ -22,6 +22,48 @@ body{
     height: 800px;
     background-color: rgba(0,0,0,0.65);
 }
+
+.form-container{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+
+.ticket-type-label{
+    width: 100%;
+    height: 30px;
+    /* background-color: lightblue; */
+}
+
+.spacer{
+    width: 100%;
+    height: 25px;
+}
+
+.spacer-1{
+    width: 100%;
+    height: 15px;
+}
+
+#single-type{
+    margin-right: 120px;
+}
+
+#couple-type{
+    margin-right: 120px;
+}
+
+#friends-type{
+    margin-right: 120px;
+}
+
+#family-type{
+    margin-right: 120px;
+}
+
+/* .ticket-types{
+    padding: 5px;
+} */
 
 .footer-con{
     width: 100%;
@@ -41,7 +83,7 @@ body{
     width: 250px;
     height: 60px;
     margin-right: 15px;
-    background-color:;
+    /* background-color:; */
     float: right;
 }
 
@@ -51,97 +93,5 @@ body{
     list-style: none;
     color: white;
     font-family: sans-serif;
- 
-}
-
-.total-here{
-    
-    width: 120px;
-    height: 30px;
-    margin:0 auto;
-    background-color:  orangered;
-    margin-top: 20px;
-    color: white;
-    font-family: sans-serif;
-    
-}
-
-.input{
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.buy-tickets p{
-    color:  white;
-    font-family: sans-serif;
-}
-
-.buy-now{
-    width: 50px;
-    height: 25px;
-    margin:0 auto;
-     margin-top: 20px;
-}
-
-.buy-now h4{
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 19px;
-    color: white;
-    background-color: orangered;
-    font-family: sans-serif;
-    cursor: pointer;
-}
-
-
-.total-here{
-    display: block;
-    text-align:center;
-}
-
-
-.sales-con{
-    width: 250px;
-    height: 300px;
-    background-color:darkseagreen;
-    margin: 0 auto;
-    margin-top: 160px;
 
 }
-
-.right-con{
-    width: 100%;
-    height: 800px;
-    background-color:;
-    float: right;
-    
-}
-
-.form-con{
-    width: 500px;
-    height: 300px;
-    background-color: darkseagreen;
-    margin: 0 auto;
-    margin-top: 200px;
-    text-align: center
-}
-
-.buy-tickets input{
-    display:list-item;
-}
-
-.form-con h2{
-    padding-left: 56px;
-    color: white;
-    font-family: sans-serif;
-    
-}
-
-.dropdown{
-    width: 150px;
-    height: 15px;
-    padding-left: 50px;
-    
-}
-

@@ -5,12 +5,13 @@
 <head>  
     <!--Meta_Information-->
     <meta name="author" content="William Mavuso">
+    <meta name="student number" content="180256">
     <meta name="assessment" content="amusement_park">
     <meta name="subject" content="IDV100">
     <meta name="lecturer" content="Mike Maynard">
     
     <!--title-->
-    <title> Tickets </title>
+    <title> Tickets page</title>
     
    <link rel="stylesheet" href="../css/tickets.css">
     <script src="../js/data.js"></script>
@@ -37,32 +38,62 @@
         <div class="overlay">
         
     
-         <div class="right-con">
-             
-             <div class="form-con">
-             <form class="buy-tickets"><h2> Buy Tickets</h2>
-                 
-                 <select name="dropdown" type="text" id="ticketOptions" onchange="getTicketInfo();">
-                 <option>- - -</option>
-                 <option> single's package</option>
-                 <option> couple's package </option>
-                 <option> friendship package </option>
-                 <option> family package</option>
-                     
-                 
-                 </select>
-                 
-                 <P>Quantity : </P>
-                 <input class="input" type="number" placeholder="1" id="ticketRange">
-                 <p> Cost Total</p>
-                 <div id="ticketTotalOutput" class="total-here"> </div>
-                 <div class="buy-now" id="buyNow" onclick="getTotalTicketCost()"> <h4>BUY</h4> </div> 
-                 
-                 
-                 </form><!--buy_tickets-->
-             </div><!--form_con-->
-             
-        </div><!--right_con-->
+<div class="form-container">
+    
+    <form>
+        <div class="ticket-type-label">
+            <label> <h2> Ticket Types: </h2></label>
+        </div>
+        <div class="spacer"></div>
+            <div class="ticket-types">
+                <label id="single-type">Single x 1</label>
+                <label id="couple-type">Couple x 2</label>
+                <label id="friends-type">Friends x 3</label>
+                <label id="family-type">Family x 5</label>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="quantities">
+                <label>Quantity:</label>
+                <input type="number" min="0" name="singles-quanitity" id="quantity" placeholder="0">
+                <label>Quantity:</label>
+                <input type="number" min="0" name="couples-quanitity" id="quantity" placeholder="0">
+                <label>Quantity:</label>
+                <input type="number" min="0" name="friends-quanitity" id="quantity" placeholder="0">
+                <label>Quantity:</label>
+                <input type="number" min="0" name="family-quanitity" id="quantity" placeholder="0">
+            </div>
+            <div class="spacer"></div>
+            <div class="purchase-button">
+                <button type="submit">Purchase</button>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="totals">
+                <div class="tickets-container">
+                    <label> Total Tickets :</label>
+                    <label id="total-ticket-output">0</label>
+                </div>
+                <div class="spacer-1"></div>
+
+                <div class="income-container">
+                    <label> Total Price :</label>
+                    <label id="total-price-output"></label>
+                </div>
+                <div class="spacer-1"></div>
+
+                <div class="family-total-container">
+                    <label> Total Family Tickets :</label>
+                    <label id="total-family-ticket-output">0</label>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="reset-button">
+                <button type="submit">Reset</button>
+            </div>
+    </form>
+</div>
         
         </div><!--overlay-->
         
