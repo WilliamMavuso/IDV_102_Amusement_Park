@@ -2,52 +2,181 @@
 
 <html>
 
-<head>  
-    <!--Meta_Information-->
-    <meta name="author" content="William Mavuso">
-    <meta name="assessment" content="amusement_park">
-    <meta name="subject" content="IDV100">
-    <meta name="lecturer" content="Mike Maynard">
-    
-    <!--title-->
-    <title> Rides </title>
-    
-   <link rel="stylesheet" href="../css/rides.css">
-    
+<head>
+  <!--Meta_Information-->
+  <meta name="author" content="William Mavuso">
+  <meta name="assessment" content="amusement_park">
+  <meta name="subject" content="IDV100">
+  <meta name="lecturer" content="Mike Maynard">
+
+  <!--title-->
+  <title> Rides </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="../css/rides.css">
+  <script type="text/javascript" src="../js/rides.js"></script>
+
 </head>
 
 <body>
-    
-    
-     <div class="nav-con">
-        <div class="logo-con"></div><!--logo_con-->
-        <div class="nav-buttons-con">
-          <ul class="nav-buttons">
-             <a href="../index.html"><li>Home</li></a>
-               <a href="../pages/tickets.html"><li>Tickets</li></a>
-             <a href="../pages/rides.html"><li>Rides</li></a>
-            </ul><!--nav_buttons-->
-        </div><!--nav_buttons_con-->
-    </div><!--nav_con-->
-    
-    <div class="header-con">
-        <div class="overlay">
-        <div class="intro-con"></div><!--intro-con-->
-        <div class="left-con">
-          <div class="ratings-con"></div><!--ratings_con-->  
-        </div><!--left_con-->
-         <div class="right-con"> 
-             
-        </div><!--right_con-->
-            </div><!--overlay-->
-    </div><!--header_con-->
-        
-     <div class="footer-con">
-              </div><!--footer_con-->
-   
-        
-        
-    
+
+
+  <div class="nav-con">
+    <div class="logo-con"></div>
+    <!--logo_con-->
+    <div class="nav-buttons-con">
+      <ul class="nav-buttons">
+        <a href="../index.html">
+          <li>Home</li>
+        </a>
+        <a href="../pages/tickets.html">
+          <li>Tickets</li>
+        </a>
+        <a href="../pages/rides.html">
+          <li>Rides</li>
+        </a>
+      </ul>
+      <!--nav_buttons-->
+    </div>
+    <!--nav_buttons_con-->
+  </div>
+  <!--nav_con-->
+
+  <div class="header-con">
+    <div class="overlay">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Pick a Ride :</h2>
+        </div>
+        <form id="form">
+          <div class="ride-con">
+            <ul>
+              <div class="bumper-con">
+                <li>
+                  <label>Bumper Cars</label>
+                  <p>Price = R20</p>
+                  <input type="number" id="bumper-ride" min="0" max="10" oninput="getTotalPrice()">
+                </li>
+                <label>Rating :</label>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+              </div>
+
+              <div class="carousel-con">
+                <li>
+                  <label>Carousel</label>
+                  <p>Price = R40</p>
+                  <input type="number" id="carousel-ride" min="0" max="10" oninput="getTotalPrice()">
+                </li>
+                <label>Rating :</label>
+                
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+              </div>
+
+              <div class="mansion-con">
+                <li>
+                  <label>The Haunted Mansion</label>
+                  <p>Price = R60</p>
+                  <input type="number" id="mansion-ride" min="0" max="10" oninput="getTotalPrice()">
+                </li>
+                <label>Rating :</label>
+                
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+              </div>
+
+              <div class="love-con">
+                <li>
+                  <label>Love Supreme</label>
+                  <p>Price = R80</p>
+                  <input type="number" id="love-ride" min="0" max="10" oninput="getTotalPrice()">
+                </li>
+                <label>Rating :</label>
+                
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+              </div>
+
+              <div class="roller-coaster-con">
+                <li>
+                  <label>Roller Coaster</label>
+                  <p>Price = R100</p>
+                  <input type="number" id="roller-ride" min="0" max="10" oninput="getTotalPrice()">
+                </li>
+                <label>Rating :</label>
+                
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+
+
+
+            </ul>
+
+                      <div class="spacer"></div>
+
+            <div class="total-con">
+              <label>Total : 
+                  <label id="total"> R . 00</label>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="filter-con">
+            <h2>Show Rides By Rating</h2>
+            <div class="thrill-o-meter">
+              <h3>Thrill-O-Meter</h3>
+            </div>
+            <div class="rides-list-con">
+              <label>Output goes here</label>
+              <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+            <div class="ride-generator-con">
+              <button>Generate a ride</button>
+            </div>
+          </div>
+
+      </div>
+      </form>
+    </div>
+  </div>
+  <!--overlay-->
+  </div>
+  <!--header_con-->
+
+  <div class="footer-con">
+  </div>
+  <!--footer_con-->
+
+
+
+
 </body>
-    
+
 </html>

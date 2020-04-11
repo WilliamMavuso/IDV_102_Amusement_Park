@@ -46,18 +46,19 @@ function ticketGenerator()
         var friendsQuantity = +document.getElementById("friends-quantity").value;
         var familyQuantity = +document.getElementById("family-quantity").value;
 
-            //Ticket generator that adds purchased tickets to the ticket-sales array
-    var ticketSales = [];
+        //Ticket generator that adds purchased tickets to the ticket-sales array
+        var ticketSales = [];
 
-    ticketSales.push(singlesQuantity, couplesQuantity, friendsQuantity, familyQuantity);
-    console.log(ticketSales);
+        ticketSales.push(singlesQuantity, couplesQuantity, friendsQuantity, familyQuantity);
+        console.log(ticketSales);
     
-    // Ticket calculation that adds the quantity of all tickets, multiplied by the x value of each package, inorder to get the total number of tickets sold.
-    var ticketCalculation = singlesQuantity + couplesQuantity * 2 + friendsQuantity * 3 + familyQuantity * 5;
+        //Ticket calculation that adds the quantity of all tickets, multiplied by the x value of each package, inorder to get the total number of tickets sold.
+        var ticketCalculation = singlesQuantity + couplesQuantity * 2 + friendsQuantity * 3 + familyQuantity * 5;
     
-    var form = document.getElementById("form");
-function handleForm(event) { event.preventDefault(); } 
-form.addEventListener('submit', handleForm);
+        //Prevent form default behaviour onSubmit
+        var form = document.getElementById("form");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
     
 }
 
@@ -65,10 +66,16 @@ function clearText()
 {
     //Output variables
     var totalTickets = document.getElementById("total-ticket-output");
+    var totalSingleTickets = document.getElementById("total-single-ticket-output");
+    var totalCoupleTickets = document.getElementById("total-couple-ticket-output");
+    var totalFriendsTickets = document.getElementById("total-friends-ticket-output");
     var totalFamilyTickets = document.getElementById("total-family-ticket-output");
     var totalPrice = document.getElementById("total-price-output");
 
-    totalTickets.innerHTML= 0;
-    totalFamilyTickets.innerHTML = 0;
+    totalTickets.innerHTML= "";
+    totalSingleTickets.innerHTML = "";
+    totalCoupleTickets.innerHTML = "";
+    totalFriendsTickets.innerHTML = "";
+    totalFamilyTickets.innerHTML = "";
     totalPrice.innerHTML = "R .00";
 }
