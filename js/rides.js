@@ -62,6 +62,10 @@ function getTotalPrice(){
 
 }
 
+function getRideRatings(){
+    
+}
+
 function main()
 {
             //Prevent form default behaviour onSubmit

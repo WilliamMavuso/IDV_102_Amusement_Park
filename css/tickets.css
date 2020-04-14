@@ -1,12 +1,13 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-con{
     width: 100%;
-    height: 60px;
-    background-color: darkseagreen;
+    height: 85px;
+    background-color: #9f00cd;
 }
 
 .header-con{
@@ -17,101 +18,401 @@ body{
     background-size: cover;
 }
 
+.logo-con{
+    width: 185px;
+    height: 85px;
+    margin-left: 28px;
+    background-position: center;
+    background-image: url(../img/logo_final.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+nav{
+    height: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    float: right;
+    margin-top: 18px;
+    margin-right: 21px;
+        /* background-color: #2A0040; */
+        border: 1.5px solid #2A0040;
+       
+    }
+
+    nav a {
+    text-decoration: none;
+    list-style: none;
+    display:block;
+    padding: 15px 20px;
+    text-align: center;
+    /* background-color: #2A0040; */
+    color:#2A0040;
+    margin:0;
+    font-family:sans-serif;
+ 
+    }
+
+    nav a:hover {
+    background-color: #2A0040;
+    border: 1.5px solid #2A0040;
+    color:white;
+    }
+
 .overlay{
     width: 100%;
     height: 800px;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.53);
+}
+
+.spacer-top{
+    width: 100%;
+    height: 125px;
+    /* background-color: blue; */
+    float: left;
 }
 
 .form-container{
     width: 100%;
     height: 80%;
-    background-color: white;
+    /* background-color: gray; */
+    float: left;
 }
 
-.ticket-type-label{
-    width: 100%;
-    height: 30px;
+.ticket-type-con{
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.img-con{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.img{
+    width: 30%;
+    height: 90px;
+    /* padding-top: 5px; */
+    text-align: center;
+    background-image: url(../img/circus_ticket.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
     /* background-color: lightblue; */
+}
+
+.name-con{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.input-con{
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.input-div{
+    padding-top: 35px;
+}
+
+.price-con{
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+
+.img-con-2{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.img-2{
+    width: 30%;
+    height: 70.35px;
+    /* padding-top: 5px; */
+    text-align: center;
+    background-image: url(../img/coins.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+.name-con-2{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.input-con-2{
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.input-div-2{
+    color: white;
+    padding-top: 35px;
+}
+
+.quantity-con{
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.img-con-3{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.img-3{
+    width: 30%;
+    height: 82px;
+    /* padding-top: 5px; */
+    text-align: center;
+    background-image: url(../img/quantity.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+.name-con-3{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.input-con-3{
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.input-div-3{
+    color: white;
+    padding-top: 35px;
+}
+
+.cart-con{
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.title-con{
+ width: 100%;
+ height: 100px;
+ color: white;
+ text-align: center;
+ font-size: 21px;
+ /* background-color: lightpink; */
+ float: left;
 }
 
 .spacer{
     width: 100%;
-    height: 25px;
+    height: 0px;
+    /* background-color: lightgray; */
+    float: left;
 }
 
-.spacer-1{
+
+.money-con{
+    width: 55%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fed640;
+}
+
+.img-con-{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+}
+
+.img-4{
+    width: 30%;
+    height: 84px;
+    padding-top: 16px;
+    text-align: center;
+    float: left;
+    color: #2A0040;
+    /* background-color: lightblue; */
+}
+
+.name-con-4{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.input-con-4{
+    width: 33.33%;
+    text-align: center;
+    height: 100px;
+    background-color: #54007F;
+    float: right;
+}
+
+.input-con-4:hover{
+    width: 33.33%;
+    text-align: center;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    background-color: #2A0040;
+    border: 2px solid #54007F;
+    box-sizing: border-box;
+    float: right;
+}
+
+.input-div-4{
     width: 100%;
-    height: 15px;
+  height: 65%;
+    color: white;
+    padding-top: 35px;
+    margin-right: 2px;
+        /* background-color: rgb(154, 161, 154); */
 }
 
-#single-type{
-    margin-right: 120px;
-}
-
-#couple-type{
-    margin-right: 120px;
-}
-
-#friends-type{
-    margin-right: 120px;
-}
-
-#family-type{
-    margin-right: 120px;
-}
-
-#single-price{
-    margin-right: 150px;
-}
-
-#couple-price{
-    margin-right: 150px;
-}
-
-#friends-price{
-    margin-right: 150px;
-}
-
-#family-price{
-    margin-right: 150px;
-}
-
-/* .ticket-types{
-    padding: 5px;
-} */
-
-.quantities{
-    word-spacing: 40px;
+.input-div-4:hover{
+    width: 100%;
+  height: 65%;
+  cursor: pointer;
+    color: #2A0040;
+    color: white;
+    padding-top: 35px;
+    margin-right: 2px;
+        /* background-color: rgb(154, 161, 154); */
 }
 
 .footer-con{
     width: 100%;
     height: 60px;
-    background-color: darkseagreen;
+    background-color: #9f00cd;  
 }
 
-.logo-con{
-    width: 80px;
-    height: 60px;
-    margin-left: 15px;
-    background-color: orangered;
-    float: left;
+.spacer-3{
+    width: 100%;
+    height: 1px;
+    /* background: grey; */
 }
 
-.nav-buttons-con{
-    width: 250px;
+.footer-logo-con{
+    width: 185px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 3px;
+    background-position: center;
+    background-image: url(../img/logo_final.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.s-m-con{
+    width: 185px;
     height: 60px;
-    margin-right: 15px;
-    /* background-color:; */
+    margin-right: 21px;
+    /* background-color: red; */
     float: right;
 }
 
-.nav-buttons a li{
-    display:inline;
-    text-decoration:none;
-    list-style: none;
-    color: white;
-    font-family: sans-serif;
+.s-m-1{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/twitter.png);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
 
+.s-m-1:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/twitter_hover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.s-m-2{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/facebook.png);
+    background-position: center;
+    background-size: cover;
+    float: left; 
+}
+
+.s-m-2:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/facebook_hover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.s-m-3{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/instagram.png);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.s-m-3:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/instagram_hover.png);
+    background-position: center;
+    background-size: cover;
 }

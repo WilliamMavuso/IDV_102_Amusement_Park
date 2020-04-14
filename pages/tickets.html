@@ -23,21 +23,19 @@
 
 
     <div class="nav-con">
-        <div class="logo-con"></div>
+        <a href="../index.html">
+            <div class="logo-con"></div>
+        </a>
         <!--logo_con-->
         <div class="nav-buttons-con">
-            <ul class="nav-buttons">
-                <a href="../index.html">
-                    <li>Home</li>
-                </a>
+            <nav class="nav-buttons">
                 <a href="../pages/tickets.html">
                     <li>Tickets</li>
                 </a>
                 <a href="../pages/rides.html">
                     <li>Rides</li>
                 </a>
-            </ul>
-            <!--nav_buttons-->
+            </nav>
         </div>
         <!--nav_buttons_con-->
     </div>
@@ -47,101 +45,90 @@
 
         <div class="overlay">
 
-
+            <div class="spacer-top"></div>
             <div class="form-container">
-
-                <form id="form" action="#">
-                    <div class="ticket-type-label">
-                        <label>
-                            <h2> Ticket Types and Prices : </h2>
-                        </label>
-                        <label>
-                            <p> x = number of tickets sold with each package  </p>
-                        </label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="spacer"></div>
-                    <div class="ticket-types">
-                        <label id="single-type">Single x 1</label>
-                        <label id="couple-type">Couple x 2</label>
-                        <label id="friends-type">Friends x 3</label>
-                        <label id="family-type">Family x 5</label>
-                    </div>
-                    <div class="spacer"></div>
-                    <div class="ticket-prices">
-                        <label id="single-price">R100</label>
-                        <label id="couple-price">R150</label>
-                        <label id="friends-price">R200</label>
-                        <label id="family-price">R250</label>
-                    </div>
-                    <div class="spacer"></div>
-
-                    <div class="quantities">
-                        <label>Quantity:</label>
-                        <input type="number" min="0" max="1" oninput="ticketAdmin()" name="singles-quanitity"
-                            id="singles-quantity" placeholder="0">
-                        <label>Quantity:</label>
-                        <input type="number" min="0" max="3" name="couples-quanitity" oninput="ticketAdmin()"
-                            id="couples-quantity" placeholder="0">
-                        <label>Quantity:</label>
-                        <input type="number" min="0" max="5" name="friends-quanitity" oninput="ticketAdmin()"
-                            id="friends-quantity" placeholder="0">
-                        <label>Quantity:</label>
-                        <input type="number" min="0" max="2" name="family-quanitity" oninput="ticketAdmin()"
-                            id="family-quantity" placeholder="0">
-                    </div>
+                <form>
 
 
-                    <div class="spacer"></div>
-                    <div class="purchase-button">
-                        <button type="submit" id="purchase-button" onclick="ticketGenerator()">Purchase</button>
-                    </div>
-                    <div class="spacer"></div>
-
-                    <div class="totals">
-                        <div class="tickets-container">
-                            <label> Total Tickets :</label>
-                            <label id="total-ticket-output">0</label>
+                    <div class="ticket-type-con">
+                        
+                        <div class="img-con">
+                            <div class="img"></div>
                         </div>
-                        <div class="spacer-1"></div>
+                        <div class="name-con">
+                            <h4>Ticket</h4>
+                        </div>
+                        <div class="input-con">
+                            <div class="input-div">
+                                <select id="price-variables" oninput="getPrice()">
+                                    <option>-- select a ticket type --</option>
+                                    <option value="100">Single</option>
+                                    <option value="180">Couple</option>
+                                    <option value="230">Friends</option>
+                                    <option value="300">Family</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="income-container">
-                            <label> Total Price :</label>
-                            <label id="total-price-output"> R .00</label>
+                    <div class="price-con">
+
+                        <div class="img-con-2">
+                            <div class="img-2"></div>
+                        </div>
+                        <div class="name-con-2">
+                            <h4>Price</h4>
+                        </div>
+                        <div class="input-con-2">
+                            <div class="input-div-2">
+                                <label id="price">R . 00</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quantity-con">
+                        <div class="img-con-3">
+                            <div class="img-3"></div>
+                        </div>
+                        <div class="name-con-3">
+                            <h4>Quantity</h4>
+                        </div>
+                        <div class="input-con-3">
+                            <div class="input-div-3">
+                                <input type="number" id="ticket-quantity" min="0" max="100" oninput="calculateTotal()">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cart-con">
+                        <div class="title-con">
+                            <h4></h4>
                         </div>
                         <div class="spacer"></div>
-
-                        <div class="family-total-container">
-                            <label> Total Single Tickets :</label>
-                            <label id="total-single-ticket-output"></label>
-                        </div>
-                        <div class="spacer-1"></div>
-
-
-                        <div class="family-total-container">
-                            <label> Total Couple Tickets :</label>
-                            <label id="total-couple-ticket-output"></label>
-                        </div>
-                        <div class="spacer-1"></div>
-
-                        <div class="family-total-container">
-                            <label> Total Friends Tickets :</label>
-                            <label id="total-friends-ticket-output"></label>
-                        </div>
-                        <div class="spacer-1"></div>
-
-
-                        <div class="family-total-container">
-                            <label> Total Family Tickets :</label>
-                            <label id="total-family-ticket-output"></label>
-                        </div>
+                        <div class="output-con"></div>
                     </div>
-                    <div class="spacer"></div>
 
-                    <div class="reset-button">
-                        <button type="reset" onclick="clearText()">Reset</button>
+                    <div class="money-con">
+                        <div class="img-con-4">
+                            <div class="img-4">
+                                <p> <label>Total : </label><label id="totalOutput"> R . 00</label></p>
+                            </div>
+                        </div>
+                        <div class="name-con-4">
+                            
+                        </div>
+                        <div class="input-con-4">
+                            <div class="input-div-4">
+                                <label>Purchase</label>
+                            </div>
+                        </div>
+
                     </div>
+
+
                 </form>
             </div>
 
@@ -152,6 +139,14 @@
     <!--header_con-->
 
     <div class="footer-con">
+        <div class="s-m-con">
+            <div class="s-m-1"></div>
+            <div class="s-m-2"></div>
+            <div class="s-m-3"></div>
+        </div>
+        <div class="spacer-3"></div>
+        <div class="footer-logo-con"></div>
+
     </div>
     <!--footer_con-->
 
