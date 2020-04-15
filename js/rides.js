@@ -1,76 +1,101 @@
-console.log("Working");
+function getRating(){
 
-// class Ride {
-//     constructor (title, rating,rides)
-//     {
-//         this.title = title;
-//         this.rating = rating;
-//         this.rides = rides;
-//     }
-// }
+    // category types
 
-// var bumperCars = new Ride("bumperCars", 5, rideInputFromUser);
-// var carousel = new Ride("Carousel", 4, rideInputFromUser);
-// var theHauntedMansion = new Ride("theHauntedMansion", 3, rideInputFromUser);
-// var loveSupreme = new Ride("loveSupreme", 2, rideInputFromUser);
-// var rollerCoaster = new Ride("rollerCoaster", 1, rideInputFromUser);
+    var dark = document.getElementById("dark");
+    var flat = document.getElementById("flat");
+    var VR = document.getElementById("VR");
+    filter();
 
-// function getRatings()
-// {
-//     var ratings = [];
-//     ratings.push(bumperCars.rating, carousel.rating, theHauntedMansion.rating, loveSupreme.rating, rollerCoaster.rating);
-//     console.log(ratings);
-// }
+    console.log("Working")
 
-// getRatings();
+    // filter by category
 
-// console.log(bumperCars);
+    function filter() {
 
-function getTotalPrice(){
+        const div = document.createElement('div');
+      
+        div.className = 'card';
+      
+        div.innerHTML = `
+        <div class="card" id="flat">
+        <div class="image"></div>
+        <br>
+        <label>Name</label>
+        <br>
+        <br>
+        <label id="5 stars">Rating : </label>
+      </div>
+        `;
+      
+        var content = document.getElementById('content');
+        content.style.height = '500px';
+        content.appendChild(div);
+      }
+    }
 
-    //price variables
-    var bumperPrice = 20;
-    var carouselPrice = 40;
-    var mansionPrice = 60;
-    var lovePrice = 80;
-    var rollerCoasterPrice = 100;
 
-    //Ride quantities
-    var bumperRide = +document.getElementById("bumper-ride").value;
-    var carouselRide = +document.getElementById("carousel-ride").value;
-    var mansionRide = +document.getElementById("mansion-ride").value;
-    var loveRide = +document.getElementById("love-ride").value;
-    var rollerCoasterRide = +document.getElementById("roller-ride").value;
 
-    // console.log(bumperRide * bumperPrice +);
+    // function removeRow() {
 
-    //Output variable
-    var totalOutput = document.getElementById("total");
-   
+    //     content.parentNode.removeChild(content);
+    //   }
 
-    //Price calculations
-    var bumperTotal = bumperRide * bumperPrice; 
-    var carouselTotal =  carouselRide * carouselPrice;
-    var mansionTotal =  mansionRide * mansionPrice; 
-    var loveTotal = loveRide * lovePrice;
-    var rollerCoasterTotal = rollerCoasterRide * rollerCoasterPrice;
-
-    var total = bumperTotal + carouselTotal + mansionTotal + loveTotal + rollerCoasterTotal;
-
-    totalOutput.innerHTML = "R" + total + ". 00";
-    console.log(total);
-
-}
-
-function getRideRatings(){
+// function getRating(){
+//     var categories = document.getElementById("categories");
+//     var value = categories.options[categories.selectedIndex].value;
+//     var text = categories.options[categories.selectedIndex].text;
     
-}
+//     console.log(value);
+//     console.log(text);
+// }
 
-function main()
-{
-            //Prevent form default behaviour onSubmit
-            var form = document.getElementById("form");
-            function handleForm(event) { event.preventDefault(); } 
-            form.addEventListener('submit', handleForm);
-}
+// // }
 
+// filterSelection("all")
+// function filterSelection(c) {
+//   var x, i;
+//   x = document.getElementsByClassName("filterDiv");
+//   if (c == "all") c = "";
+//   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+//   for (i = 0; i < x.length; i++) {
+//     w3RemoveClass(x[i], "show");
+//     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+//   }
+// }
+
+// // Show filtered elements
+// function w3AddClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) {
+//       element.className += " " + arr2[i];
+//     }
+//   }
+// }
+
+// // Hide elements that are not selected
+// function w3RemoveClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     while (arr1.indexOf(arr2[i]) > -1) {
+//       arr1.splice(arr1.indexOf(arr2[i]), 1);
+//     }
+//   }
+//   element.className = arr1.join(" ");
+// }
+
+// // Add active class to the current control button (highlight it)
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }

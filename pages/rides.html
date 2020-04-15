@@ -23,184 +23,103 @@
 
   <div class="nav-con">
     <a href="../index.html">
-      <div class="logo-con"></div>
- </a>
+        <div class="logo-con"></div>
+    </a>
     <!--logo_con-->
     <div class="nav-buttons-con">
-      <ul class="nav-buttons">
-        <a href="../index.html">
-          <li>Home</li>
-        </a>
-        <a href="../pages/tickets.html">
-          <li>Tickets</li>
-        </a>
-        <a href="../pages/rides.html">
-          <li>Rides</li>
-        </a>
-      </ul>
-      <!--nav_buttons-->
+        <nav class="nav-buttons">
+            <a href="../pages/tickets.html">
+                <li>Tickets</li>
+            </a>
+            <a href="../pages/rides.html">
+                <li>Rides</li>
+            </a>
+        </nav>
     </div>
     <!--nav_buttons_con-->
-  </div>
+</div>
   <!--nav_con-->
 
   <div class="header-con">
     <div class="overlay">
       <div class="form-container">
+        <div class="spacer"></div>
         <div class="form-header">
-          <h2>Pick a Ride :</h2>
+          <h1> Ride like the Wind </h1>
+          <p>Browse through our amazing rides at the park</p>
         </div>
+
         <form id="form">
-          <div class="ride-con">
-            <ul>
-              <div class="bumper-con">
-                <li>
-                  <label>Bumper Cars</label>
-                  <p>Price = R20</p>
-                  <input type="number" id="bumper-ride" min="0" max="10" oninput="getTotalPrice()">
-                </li>
-                <label>Rating :</label>
-
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 </label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 </label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 </label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 </label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 </label>
-                </div>
-
-              </div>
-
-              <div class="carousel-con">
-                <li>
-                  <label>Carousel</label>
-                  <p>Price = R40</p>
-                  <input type="number" id="carousel-ride" min="0" max="10" oninput="getTotalPrice()">
-                </li>
-                <label>Rating :</label>
-                
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 </label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 </label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 </label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 </label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 </label>
-                </div>
-
-              </div>
-
-              <div class="mansion-con">
-                <li>
-                  <label>The Haunted Mansion</label>
-                  <p>Price = R60</p>
-                  <input type="number" id="mansion-ride" min="0" max="10" oninput="getTotalPrice()">
-                </li>
-                <label>Rating :</label>
-                
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 </label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 </label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 </label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 </label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 </label>
-                </div>
-
-              </div>
-
-              <div class="love-con">
-                <li>
-                  <label>Love Supreme</label>
-                  <p>Price = R80</p>
-                  <input type="number" id="love-ride" min="0" max="10" oninput="getTotalPrice()">
-                </li>
-                <label>Rating :</label>
-                
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 </label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 </label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 </label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 </label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 </label>
-                </div>
-
-              </div>
-
-              <div class="roller-coaster-con">
-                <li>
-                  <label>Roller Coaster</label>
-                  <p>Price = R100</p>
-                  <input type="number" id="roller-ride" min="0" max="10" oninput="getTotalPrice()">
-                </li>
-                <label>Rating :</label>
-                
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 </label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 </label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 </label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 </label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 </label>
-                </div>
-              </div>
-
-
-
-            </ul>
-
-                      <div class="spacer"></div>
-
-            <div class="total-con">
-              <label>Total : 
-                  <label id="total"> R . 00</label>
-              </label>
+          <div class="category-con">
+            <label>Category : 
+              <select id="categories" onchange="removeRow(); getRating()">
+                <option value="">All</option>
+                <option value="">Dark</option>
+                <option value="">Flat</option>
+                <option value="">VR</option>
+            </select>
+          </label>
+          <label> ( 5 )</label>
+          </div>
+          <div class="content-con" id="content">
+            <div class="card" id="flat">
+              <div class="image"></div>
+              <br>
+              <label>Name</label>
+              <br>
+              <br>
+              <label id="5 stars">Rating : </label>
+            </div>
+            <div class="card" id="dark">
+              <div class="image"></div>
+              <br>
+              <label>Name</label>
+              <br>
+              <br>
+              <label id="5 stars">Rating : </label>
+            </div>
+            <div class="card" id="VR">
+              <div class="image"></div>
+              <br>
+              <label>Name</label>
+              <br>
+              <br>
+              <label id="4 stars">Rating : </label>
+            </div>
+            <div class="card" id="VR">
+              <div class="image"></div>
+              <br>
+              <label>Name</label>
+              <br>
+              <br>
+              <label id="3 stars">Rating : </label>
             </div>
 
+            <div class="card" id="flat">
+              <div class="image"></div>
+              <br>
+              <label>Name</label>
+              <br>
+              <br>
+              <label id="2 stars">Rating : </label>
+            </div>
           </div>
-
+          <div class="spacer-1"></div>
           <div class="filter-con">
-            <h2>Show Rides By Rating</h2>
-            <div class="thrill-o-meter">
-              <h3>Thrill-O-Meter</h3>
+            <div class="filter-1">
+              <label>Find rides with <input id="" type="number" min="0"> stars or <select>
+                <option>more</option>
+                <option>less</option>
+              </select></label>
             </div>
-            <div class="rides-list-con">
-              <label>Output goes here</label>
-              <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ol>
-            </div>
-            <div class="ride-generator-con">
-              <button>Generate a ride</button>
-            </div>
-          </div>
 
-      </div>
-      </form>
+            <div class="filter-2">
+              <label>Generate a random ride</label>
+            </div>
+
+          </div>
+        </form>
+
     </div>
   </div>
   <!--overlay-->
@@ -208,8 +127,15 @@
   <!--header_con-->
 
   <div class="footer-con">
-  </div>
-  <!--footer_con-->
+    <div class="s-m-con">
+        <div class="s-m-1"></div>
+        <div class="s-m-2"></div>
+        <div class="s-m-3"></div>
+    </div>
+    <div class="spacer-3"></div>
+    <div class="footer-logo-con"></div>
+
+</div>
 
 
 

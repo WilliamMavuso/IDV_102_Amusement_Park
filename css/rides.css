@@ -1,13 +1,56 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-con{
     width: 100%;
-    height: 60px;
-    background-color: darkseagreen;
+    height: 85px;
+    background-color: #9f00cd;
 }
+
+nav{
+    height: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    float: right;
+    margin-top: 18px;
+    margin-right: 21px;
+        /* background-color: #2A0040; */
+        border: 1.5px solid #2A0040;
+       
+    }
+
+    nav a {
+    text-decoration: none;
+    list-style: none;
+    display:block;
+    padding: 15px 20px;
+    text-align: center;
+    /* background-color: #2A0040; */
+    color:#2A0040;
+    margin:0;
+    font-family:sans-serif;
+ 
+    }
+
+    nav a:hover {
+    background-color: #2A0040;
+    border: 1.5px solid #2A0040;
+    color:white;
+    }
+
+    .logo-con{
+        width: 185px;
+        height: 85px;
+        margin-left: 28px;
+        background-position: center;
+        background-image: url(../img/logo_final.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: left;
+    }
 
 .header-con{
     width: 100%;
@@ -29,100 +72,165 @@ body{
     background-color: white;
 }
 
-.form-header{
-    text-align: center;
-}
-
-.ride-con{
+.spacer{
     width: 100%;
-    height: 200px;
-    background-color: lightgray;
+    height: 0px;
+    background-color: none;
 }
 
-.bumper-con{
-    width: 20%;
-    height: 50%;
+.form-header{
+    width: 100%;
+    height: 250px;
+    color: white;
+    background-color: red;
+    text-align: center;
     float: left;
 }
 
-.carousel-con{
-    width: 20%;
-    height: 50%;
+.category-con{
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    background-color: lightgrey;
     float: left;
 }
 
-.mansion-con{
-    width: 20%;
-    height: 50%;
+.content-con{
+    width: 100%;
+    height: 250px;
+    background-color: lightpink;
     float: left;
 }
 
-.love-con{
-    width: 20%;
-    height: 50%;
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: lightgreen;
     float: left;
 }
 
-.roller-coaster-con{
-    width: 20%;
-    height: 50%;
+.image{
+    width: 100%;
+    height: 75%;
+    background-color: black;
     float: left;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
 
+.spacer-1{
+    width: 100%;
+    height: 75px;
+    background-color: lightblue;
+    float: left;
 }
 
 .filter-con{
-    text-align: center;;
-}
-
-.thrill-o-meter{
-    
-}
-
-.checked {
-    color: orange;
-  }
-
-  
-.spacer{
     width: 100%;
-    height: 35px;
+    text-align: center;
+    height: 75px;
+    background-color: lightgrey;
     float: left;
+}
+
+.filter-1{
+    width: 100%;
+    height: 50%;
+    background-color: grey;
+    float: left;
+}
+.filter-1{
+    width: 100%;
+    height: 50%;
+    background-color: darkgrey;
+    float: left;
+}
+
+
+  .footer-con{
+    width: 100%;
+    height: 60px;
+    background-color: #9f00cd;  
+}
+
+.spacer-3{
+    width: 100%;
+    height: 1px;
+    /* background: grey; */
+}
+
+.footer-logo-con{
+    width: 185px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 3px;
+    background-position: center;
+    background-image: url(../img/logo_final.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.s-m-con{
+    width: 185px;
+    height: 60px;
+    margin-right: 21px;
+    /* background-color: red; */
+    float: right;
+}
+
+.s-m-1{
+    width: 33.33%;
+    height: 100%;
     /* background-color: blue; */
-}
-
-  .total-con{
-      width: 100%;
-      height: 20px;
-      float: left;
-  }
-
-.footer-con{
-    width: 100%;
-    height: 60px;
-    background-color: darkseagreen;
-   
-}
-
-.logo-con{
-    width: 80px;
-    height: 60px;
-    margin-left: 15px;
-    background-color: orangered;
+    background-image: url(../img/twitter.png);
+    background-position: center;
+    background-size: cover;
     float: left;
 }
 
-.nav-buttons-con{
-    width: 250px;
-    height: 60px;
-    margin-right: 15px;
-    /* background-color: */
-    float:right;
+.s-m-1:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/twitter_hover.png);
+    background-position: center;
+    background-size: cover;
 }
 
-.nav-buttons a li{
-    display:inline;
-    text-decoration:none;
-    list-style: none;
-    color: white;
-    font-family: sans-serif;    
+.s-m-2{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/facebook.png);
+    background-position: center;
+    background-size: cover;
+    float: left; 
+}
+
+.s-m-2:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/facebook_hover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.s-m-3{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/instagram.png);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.s-m-3:hover{
+    width: 33.33%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../img/instagram_hover.png);
+    background-position: center;
+    background-size: cover;
 }
