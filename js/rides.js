@@ -1,38 +1,38 @@
-function getRating(){
+// function getRating(){
 
-    // category types
+//     // category types
 
-    var dark = document.getElementById("dark");
-    var flat = document.getElementById("flat");
-    var VR = document.getElementById("VR");
-    filter();
+//     var dark = document.getElementById("dark");
+//     var flat = document.getElementById("flat");
+//     var VR = document.getElementById("VR");
+//     filter();
 
-    console.log("Working")
+//     console.log("Working")
 
-    // filter by category
+//     // filter by category
 
-    function filter() {
+//     function filter() {
 
-        const div = document.createElement('div');
+//         const div = document.createElement('div');
       
-        div.className = 'card';
+//         div.className = 'card';
       
-        div.innerHTML = `
-        <div class="card" id="flat">
-        <div class="image"></div>
-        <br>
-        <label>Name</label>
-        <br>
-        <br>
-        <label id="5 stars">Rating : </label>
-      </div>
-        `;
+//         div.innerHTML = `
+//         <div class="card" id="flat">
+//         <div class="image"></div>
+//         <br>
+//         <label>Name</label>
+//         <br>
+//         <br>
+//         <label id="5 stars">Rating : </label>
+//       </div>
+//         `;
       
-        var content = document.getElementById('content');
-        content.style.height = '500px';
-        content.appendChild(div);
-      }
-    }
+//         var content = document.getElementById('content');
+//         content.style.height = '500px';
+//         content.appendChild(div);
+//       }
+//     }
 
 
 
@@ -99,3 +99,29 @@ function getRating(){
 //     this.className += " active";
 //   });
 // }
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("btn").addEventListener("click", function(event){
+        event.preventDefault()
+      });
+  }
+  
+  
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
